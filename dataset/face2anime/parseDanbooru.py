@@ -142,8 +142,8 @@ for src in srcs:
         continue
 
     # cv.imshow("Image", image)
-    cv.imshow("Face", face)
-    cv.waitKey(10)
+    # cv.imshow("Face", face)
+    # cv.waitKey(10)
     #     clear_output(True)
     #     plt.imshow(cv.cvtColor(face, cv.COLOR_BGR2RGB))
     #     plt.axis('off')
