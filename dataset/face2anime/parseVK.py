@@ -117,7 +117,10 @@ for userbatch in batch(users, 1000):
     photos = list(filter(lambda x: "photo_200" in x, photos))
     for photo in  photos:
         cnt += 1
-        face  = load_photo(photo)
+        try:
+            face  = load_photo(photo)
+        except:
+            continue
         if face is None:
             continue
 
