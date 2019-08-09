@@ -105,8 +105,9 @@ def load_photo(user):
     img = cv.cvtColor(img, cv.COLOR_RGB2BGR)
     face = crop_face(img)
     if face is not None:
-        cv.imshow("Face", face)
-        cv.waitKey(100)
+        pass
+        #cv.imshow("Face", face)
+        #cv.waitKey(100)
     return face
 
 cnt = 0
